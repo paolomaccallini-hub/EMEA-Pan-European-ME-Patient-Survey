@@ -284,7 +284,7 @@ In Table 7, I compared outliers (LOF above the 0.9 quantile) with the others. Ou
 
 The performances of the logistic and Naive Bayes models in predicting the severity of the patients from the other variables are documented in Figures 5 and 6, respectively. The logistic classifier shows a better profile: using as a cut-off a predicted probability of 0.75, it reaches a sensitivity and a specificity of 0.75.
 
-<img src="https://github.com/user-attachments/assets/418a6150-a5dc-4f30-9311-26dcd4dc5e90" width="800" alt="Supervised_log_Resampling_severity_n">
+<img src="https://github.com/user-attachments/assets/9ef26982-d128-4b67-a0cd-c388ae2131c4" width="800" alt="Supervised_log_Resampling_severity_n">
 <p align="left">
   <em>Figure 5. Performances of a logistic regression, with severity as the outcome variable (its value is one for patients who are housebound or worse, zero otherwise). For each value of the cut-off of the predicted probability used to classify the subject, resampling was randomly performed 40 times; then, mean sensitivity and specificity were calculated and plotted. Left: sensitivity, specificity, accuracy, type I error (ERI), and type II error (ERII) are plotted as a function of the predictive-probability cut-off. Right: Sensitivity is plotted as a function of false positive rate. </em>
 </p>
@@ -314,14 +314,16 @@ The significant coefficients of the logistic regression applied to all the avail
   <em> Table 8. Significant coefficients of the logistic regression between a binary variable for severity (1 if house-bound or worse, 0 otherwise) and all the available variables. </em>
 </p>
 
-I also trained two models (logistic regression and Naive Bayes) to predict LOF. Their performances in predicting outliers (LOF>0.95th percentile) are reported in Figures 7 and 8, respectively
+### Supervised classification of outliers
 
-<img src="https://github.com/user-attachments/assets/e1e1fb19-0722-4b41-b339-ade20faaf525" width="800" alt="Supervised_log_Resampling_lof">
+I also trained two models (logistic regression and Naive Bayes) to predict LOF. Their performances in predicting outliers (LOF>0.95th percentile) are reported in Figures 7 and 8, respectively.
+
+<img src="https://github.com/user-attachments/assets/69a52aa7-3e4e-4578-9843-b5262ae122b7" width="800" alt="Supervised_log_Resampling_lof">
 <p align="left">
-  <em>Figure 7. Performances of a logistic regression, with LOF as the outcome variable (its value is one for LOF above the 95th percentile, zero otherwise). For each value of the cut-off of the predicted probability used to classify the subject, resampling was randomly performed 40 times. Next, mean sensitivity and specificity were calculated and plotted. Left: sensitivity, specificity, accuracy, type I error (ERI), and type II error (ERII) are plotted as a function of the predictive-probability cut-off. Right: Sensitivity is plotted as a function of false positive rate. </em>
+  <em>Figure 7. Performances of a logistic regression, with LOF as the outcome variable (its value is one for LOF above the 95th percentile, zero otherwise). For each value of the cut-off of the predicted probability used to classify the subject, resampling was randomly performed 40 times. Next, the mean sensitivity and specificity were calculated and plotted. Left: sensitivity, specificity, accuracy, type I error (ERI), and type II error (ERII) are plotted as a function of the predictive-probability cut-off. Right: Sensitivity is plotted as a function of false positive rate. </em>
 </p>
 
-<img src="https://github.com/user-attachments/assets/ec20aa28-3e8d-4dcf-bf75-790697eeabd9" width="800" alt="Supervised_NB_Resampling_lof">
+<img src="https://github.com/user-attachments/assets/3a85c51c-e101-4339-9ddd-5dacc029a93d" width="800" alt="Supervised_NB_Resampling_lof">
 <p align="left">
   <em>Figure 8. Performances of a Naive Bayes model, with LOF as the outcome variable (its value is one for LOF above the 95th percentile, zero otherwise). See Figure 7 for details. </em>
 </p>
