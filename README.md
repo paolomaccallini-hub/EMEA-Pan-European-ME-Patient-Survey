@@ -296,7 +296,7 @@ The performances of the logistic and Naive Bayes models in predicting the severi
 
 The significant coefficients of the logistic regression applied to all the available data are reported in Table 8. We see that the significant positive predictors of severity are fatigue, dizziness, PEM, sensitivity,  sleep problems, and the presence of relatives with the same disease. On the other hand, a course of the disease that is stable, fluctuating or improving negatively regresses with severity. Also, starting the illness after a traumatic life event predicts a less severe profile. The Area Under the Curve of this model is 0.83 (see ROC_log_severity_n.jpg in the file section).
 
-| Variable          | Estimate | Std. Error | z value | Pr(>|z|)   | Signif. |
+| Variable          | Estimate | SE         | Z       | p-value    |Sign.    |
 |:------------------|---------:|-----------:|--------:|-----------:|:--------|
 | (Intercept)       |  -5.6934 |     0.3066 | -18.569 | < 2e-16    | ***     |
 | fatigue_n         |   0.9764 |     0.0420 |  23.259 | < 2e-16    | ***     |
