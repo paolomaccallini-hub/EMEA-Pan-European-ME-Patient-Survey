@@ -333,9 +333,18 @@ I also trained two models (logistic regression and Naive Bayes) to predict LOF. 
 
 When we apply the logistic regression to the three subjects of Table 9, we obtain the following results and we see that this model performs poorly for PT3, who defined himself as mostly bedridden.
 
-| Prediction of being at least housebound |
-|----|
-|PT1 is housebound with a probability of 0.87|
-|PT2 is housebound with a probability of 0.83|
-|PT3 is housebound with a probability of 0.4|
+| Patient | Outlier | Prediction | Housebound | Prediction |
+|:--------|--------:|-----------:|-----------:|-----------:|
+| PT1     | Yes     |            | Yes        | 0.87       |
+| PT2     | No      |            | Yes        | 0.83       |
+| PT2     | No      |            | Yes        | 0.4        |
 
+
+
+# Discussion
+
+Monogenic forms of common idiopathic diseases have been documented in Alzheimer's Disease (AD) ([Barber RC 2012](https://pubmed.ncbi.nlm.nih.gov/24278680/)), Parkinson's Disease (PD) ([Girija MS et Kishore A 2025](https://journals.lww.com/aomd/fulltext/2025/01000/clinical_approach_to_monogenic_parkinson_s_disease.1.aspx)), and Frontotemporal Dementia (FTD) ([Barbier M et al. 2018](https://pubmed.ncbi.nlm.nih.gov/30168435/)). Using PD as a paradigmatic case, we observe that despite a substantial overlap in clinical presentation, monogenic forms often display atypical symptoms (due to the specific gene affected) and an early onset. Also, the study of monogenic cases has offered important insights into the mechanisms of the idiopathic form ([Girija MS et Kishore A 2025](https://journals.lww.com/aomd/fulltext/2025/01000/clinical_approach_to_monogenic_parkinson_s_disease.1.aspx)). 
+
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a complex disease defined by persistent fatigue, exacerbation of post-exertional symptoms, cognitive impairment and orthostatic intolerance ([Chu L et al. 2019](https://pubmed.ncbi.nlm.nih.gov/30805319/)), with a prevalence of 0.009 ([Lim EJ et al. 2020](https://pubmed.ncbi.nlm.nih.gov/32093722/)). A recent GWAS meta-analysis on 21,560 ME/CFS patients inclunding data from DecodeME, UK Biobank, and Million Veteran Program, revealed a possible involvement of the glutamatergic synapses ([Maccallini 2025](https://github.com/paolomaccallini-hub/MetaME)) ([Maccallini 2026](https://github.com/paolomaccallini-hub/MetaME-GeNet)). On the other hand, only a few attempts have been published to document Mendelian ME/CFS (MME) by next-generation sequencing (NGS), tagging genes NOS3 ([McGarrity S. et al. 2024](https://pubmed.ncbi.nlm.nih.gov/39328057/)) and AKRIC1/AKRIC2  ([Oakley J et al. 2023](https://pubmed.ncbi.nlm.nih.gov/37978513/)). With the planned whole-genome sequencing (WGS) study of more than 18k patients announced by the DecodeME group, this landscape is likely to change drastically, with a sharp increase in well-documented MME cases.
+
+Soon, clinicians will face the challenge of selecting subjects with ME/CFS to send for WGS, along with their family members. We do not yet know what peculiar features to look for in this population. Here, I propose an unsupervised selector based on the Local Outlier Factor (LOF) algorithm ([Breunig MM, 2000](https://dl.acm.org/doi/10.1145/335191.335388)) applied to the raw data from the EMEA Pan-European ME Patient Survey ([Angelsen A et Schei T, 2024](https://www.europeanmealliance.org/emea-pan-european-survey-UK.shtml)). We also discuss the case of a patient suspected of belonging to the MME population.
