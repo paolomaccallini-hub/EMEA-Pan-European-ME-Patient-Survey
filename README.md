@@ -395,7 +395,7 @@ I applied three of the classifiers discussed above to the supplementary patients
 |:--------|--------:|-----------:|-----------:|-----------:|--------------:|-----------:|
 | PT1     | Yes     | Yes (10%)  | Yes        | Yes (87%)  | No            | No (45%)   |
 | PT2     | No      | No (4%)    | Yes        | Yes (83%)  | Yes           | Yes (65%)  |
-| PT2     | No      | No (1%)    | Yes        | No (40%)   | No            | Yes (58%)  |
+| PT3     | No      | No (1%)    | Yes        | No (40%)   | No            | Yes (58%)  |
 
 <p align="left">
   <em>Table 2. Predictions about outlier status, deterioration, and severity for the three patients included in folder [Supplementary Cases](Supplementary%20Cases/). </em>
