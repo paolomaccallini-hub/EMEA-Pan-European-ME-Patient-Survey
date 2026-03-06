@@ -1,0 +1,2 @@
+"gender_n"	"trigger_n"	"relatives_n"	"fatigue_n"	"muscleorjointpain_n"	"dizzness_n"	"sleepproblems_n"	"sensitivity_n"	"pem_n"	"course_n"	"fibromyalgia_n"	"Hashimotosthyroiditis_n"	"interstitialcystitis_n"	"siccasyndrome_n"	"irritablebowelsyndrome_n"	"migraine_n"	"allergies_n"	"endometriosis_n"	"asthma_n"	"multiplechemicalsensitivities_n"	"severity_n"	"age_ill"	"age"	"duration"
+1	1	0	5	1	2	3	1	4	7	0	0	0	0	1	0	0	0	0	0	5	11	28	17
