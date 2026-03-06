@@ -14,7 +14,7 @@ The results of the 2021 survey promoted by the European ME Alliance (EMEA) were 
 
 The original raw data included 11,297 subjects and 272 variables. Individuals without a ME/CFS diagnosis were removed (1,484 subjects), then 69 subjects with no specified gender were filtered out. Then, 4 patients whose year of birth was after the year of first symptoms were removed. Two males indicated as trigger pregnancy/birth, but their illness started years after birth: they were removed. Of the remaining 9,738 subjects, two male patients reported endometrosis as a comorbidity, and their data were edited to remove the inconsistency. Missing data were present in 145 subjects, and they were removed. The subjects selected from the original data set are 9,593.
 
-Age at diagnosis was calculated as the year of first symptoms minus the year of birth. Age was calculated as 2021 minus the year of birth. Three further cases collected by me were added to the raw data (folder `Supplementary Cases`), for a total of 9,596 ME/CFS patients. After editing and selecting the variables, I included 23 parameters for each subject. Below is the description of the variables of the present analysis.
+Age at diagnosis was calculated as the year of first symptoms minus the year of birth. Age was calculated as 2021 minus the year of birth. Three further cases collected by me were added to the raw data (folder [Supplementary Cases](Supplementary Cases/)), for a total of 9,596 ME/CFS patients. After editing and selecting the variables, I included 23 parameters for each subject. Below is the description of the variables of the present analysis.
 
 | Variable                          | Type      | Values |
 |:----------------------------------|:----------|:--------------------------------------------------------------------------------------------------------------------------------|
@@ -331,9 +331,9 @@ I also trained two models (logistic regression and Naive Bayes) to predict LOF. 
 
 
 
+### Prediction for three patients
 
-
-When we apply the logistic regression to the three subjects of Table 9, we obtain the following results and we see that this model performs poorly for PT3, who defined himself as mostly bedridden.
+When we apply the logistic regression to the three supplementary subjects (see folder [Supplementary Cases](Supplementary Cases/)), we obtain the following results, and we see that this model performs poorly for PT3, who defined himself as mostly bedridden.
 
 | Patient | Outlier | Prediction | Housebound | Prediction |
 |:--------|--------:|-----------:|-----------:|-----------:|
@@ -341,7 +341,9 @@ When we apply the logistic regression to the three subjects of Table 9, we obtai
 | PT2     | No      |            | Yes        | 0.83       |
 | PT2     | No      |            | Yes        | 0.4        |
 
-
+<p align="left">
+  <em>Table 2. Parameters of the two gamma densities whose combination fits the distribution of age at first symptoms. Stratification by sex. </em>
+</p>
 
 # Discussion
 
