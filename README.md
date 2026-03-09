@@ -4,7 +4,7 @@
 
 Raw data from the EMEA Pan-European ME Patient Survey were analysed by several methods, including local outlier factor (LOF), supervised and unsupervised Machine Learning (ML), and bimodal fit of age at first symptoms.
 
-A total of 9,596 subjects were considered, including three patients added to the original data set. Age at first symptoms for males with ME/CFS fits a statistically significant gamma bimodal distribution, with about 60% of subjects developing the disease at a mean age of 27 (sd = 13) and 40% at a mean age of 40 (sd = 8). Males who develop the disease earlier in their lives experience more sensitivity to sound/noise, dizziness, and sleep problems, but less pain. They show a higher level of severity.
+Age at first symptoms among males with ME/CFS follows a bimodal gamma mixture distribution, with approximately 60% of subjects developing the disease at a mean age of 27 years (SD = 13) and 40% at a mean age of 40 years (SD = 8). Males who develop the disease earlier in their lives experience more sensitivity to sound/noise, dizziness, and sleep problems, but less pain. They show a higher level of severity.
 
 Females report more comorbidities than males, they have more PEM, and are less likely to be stable. Females are also less likely to begin the disease after an infection, but more likely to indicate vaccination as the triggering event. Despite these differences, females are not more severe and more fatigued than males.
 
