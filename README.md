@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Raw data from the EMEA Pan-European ME Patient Survey were analysed by several methods, including local outlier factor (LOF), supervised and unsupervised Machine Learning (ML), and bimodal fit of age at first symptoms.
+Raw data from the EMEA Pan-European ME Patient Survey were analysed by several methods, including local outlier factor (LOF), supervised and unsupervised Machine Learning (ML), and bimodal fit of age at first symptoms. A total of 9,596 ME/CFS patients were included.
 
 Age at first symptoms among males with ME/CFS follows a bimodal gamma mixture distribution, with approximately 60% of subjects developing the disease at a mean age of 27 years (SD = 13) and 40% at a mean age of 40 years (SD = 8). Males who develop the disease earlier in their lives experience more sensitivity to sound/noise, dizziness, and sleep problems, but less pain. They show a higher level of severity.
 
