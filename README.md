@@ -74,7 +74,7 @@ For the majority of the following analyses, I expanded variables `course_n` and 
 
 ### Bimodal analysis of age at onset
 
-The distributions of `age_ill` for females, males, and both sexes were analysed by maximum likelihood estimation (MLE) performed by the function `mixfit()` of the R package `mixR` ([You Y, 2021](https://joss.theoj.org/papers/10.21105/joss.04031)). I asked for a bimodal density using both gamma and lognormal densities. Then, I tested the fit by the two-sided Kolmogorov-Smirnov test ([Marsaglia G et al. 2003](https://www.jstatsoft.org/article/view/v008i18)), using the function `ks.test()` of the package `stats`. This method tests the following null hypothesis: the distribution comes from the fitted density. Therefore, a high p-value supports the fit.
+The distributions of `age_ill` for females, males, and both sexes were analysed by maximum likelihood estimation (MLE) performed by the function `mixfit()` of the R package `mixR` ([You Y, 2021](https://joss.theoj.org/papers/10.21105/joss.04031)). I asked for a bimodal density using normal, gamma, and lognormal densities. Then, I tested the fit by the two-sided Kolmogorov-Smirnov test ([Marsaglia G et al. 2003](https://www.jstatsoft.org/article/view/v008i18)), using the function `ks.test()` of the package `stats`. This method tests the following null hypothesis: the distribution comes from the fitted density. Therefore, a high p-value supports the fit.
 
 ### Local outlier factor
 
@@ -100,7 +100,7 @@ To search for clusters in an unbiased way, I used the `pam()` function from the 
 
 ### Bimodal analysis of age at onset
 
-The bimodal fit based on two gamma densities for the age at onset was significant only for males (Figure 1), according to the two-sided Kolmogorov-Smirnov test. The lognormal fit gave a similar result, but the fit is less significant (see repository files).  
+The bimodal fit based on two gamma densities for the age at onset was significant only for males (Figure 1), according to the two-sided Kolmogorov-Smirnov test. The lognormal fit gave a similar result, but the fit is less significant (see repository files). The normal fit was significant for males, but with a slightly higher p-value.
 
 <img src="https://github.com/user-attachments/assets/02c41852-73d0-4de7-8853-3f6e46ccfe58" width="700" alt="Age_at_onset_gamma_Bimodality">
 <p align="left">
