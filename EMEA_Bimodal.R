@@ -36,7 +36,7 @@ xvals<-seq(0,100,1)
 #
 # Bimodal analysis
 #
-family<-c("gamma", "lnorm")
+family<-c("gamma", "lnorm", "norm")
 fit_list<-list()
 for (fam in family) {
   print(fam)
@@ -92,6 +92,24 @@ for (fam in family) {
       CDF_func<-function(q) {
         m*pgamma(q,shape=fit_list[[sex]]$alpha[1],rate=fit_list[[sex]]$lambda[1]) +
           (1-m)*pgamma(q,shape=fit_list[[sex]]$alpha[2],rate=fit_list[[sex]]$lambda[2])
+      }
+    } else if (fam=="norm") {
+      for (gr in c(1,2)) {
+        counter<-counter+1
+        print(counter)
+        prop<-fit_list[[sex]]$pi[gr]
+        mu<-fit_list[[sex]]$mu[gr]
+        sd<-fit_list[[sex]]$sd[gr]
+        myresults$group[counter]<-paste(age[gr],names(sexes[sex]))
+        myresults$proportion[counter]<-round(prop,2)
+        myresults$mean[counter]<-mu 
+        myresults$SD[counter]<-sd
+        f_list[[gr]]<-dnorm(xvals,mean=mu,sd=sd) 
+      }
+      m<-fit_list[[sex]]$pi[1]
+      CDF_func<-function(q) {
+        m*pnorm(q,mean=fit_list[[sex]]$mu[1],sd=fit_list[[sex]]$sd[1],) +
+          (1-m)*pnorm(q,mean=fit_list[[sex]]$mu[2],sd=fit_list[[sex]]$sd[2])
       }
     }
     #
